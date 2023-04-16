@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,34 @@
     {% include 'includes/auth_styles.html' %}
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
     {% include 'includes/loader_wheel.html' %}
 
-    {% block content %}
-    
-    {% endblock %}
+    <!-- Container Principal -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <!-- Container de Login -->
+        <div class="row rounded-5 p-3 shadow box-area">
+            <!-- Caixa da Esquerda -->
+            <div class="col-md-5 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
+                id="image-left" style="background-image: url('/static/images/login/{{ inspiration_image }}.jpg');">
+                {% block quote %}
+                {% endblock %}
+            </div>
+            <!-- Caixa da Direita -->
+            <div class="col-md-7 right-box">
+
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+
 </html>

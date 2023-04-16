@@ -13,7 +13,7 @@ body{
 
 h2, p, small{
     color: white;
-    line-height: 0.8;
+    line-height: 1.1;
 }
 
 h2.box, p.box, small.box{
@@ -34,7 +34,8 @@ h2.box, p.box, small.box{
     padding: 40px 30px 40px 40px;
 }
 #image-left {
-    background-image: url("/static/images/login/wallpaper.jpg");
+    width: 22rem; 
+    height: 30rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
