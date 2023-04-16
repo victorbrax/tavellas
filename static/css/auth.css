@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+:root {
+    --bs-panel: #121418;
+    --bs-menu: #1B1F24;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bs-panel)
+}
+
+h2, p, small{
+    color: white;
+    line-height: 0.8;
+}
+
+h2.box, p.box, small.box{
+    color: var(--bs-menu);
+}
+
+#left-quote{
+    text-shadow: 1px 2px 5px #000000c4;
+}
+
+.box-area{
+    background: var(--bs-menu);
+}
+.box-area{
+    width: 930px;
+}
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+#image-left {
+    background-image: url("/static/images/login/wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.678), 0px 0px 50px rgba(0, 0, 0, 0.486);
+}
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
