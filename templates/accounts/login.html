@@ -2,11 +2,8 @@
 
 {% block title %}Página de Login{% endblock %}
 
-
-{% block quote %}
-<p id="left-quote">"Pedale mais, preocupe-se menos."</p>
-<small id="left-quote" style="font-style: italic;">— Lance Armstrong</small>
-{% endblock %}
+{% block quote %}"Pedale mais, preocupe-se menos."{% endblock %}
+{% block author %}— Lance Armstrong{% endblock %}
 
 {% block content %}
 
@@ -26,7 +23,7 @@
         <label for="formCheck" class="form-check-label text-secondary"><small>Lembre-se de mim!</small></label>
     </div>
     <div class="forgot">
-        <small><a href="#">Esqueceu sua senha?</a></small>
+        <small><a href="{{ url_for('auth.forgot_page') }}">Esqueceu sua senha?</a></small>
     </div>
 </div>
 <div class="input-group mb-3">
@@ -37,5 +34,5 @@
             class="me-2"><small class="box">Usar sua conta Google</small></button>
 </div>
 <div class="row">
-    <small>Está sem uma conta? <a href="#">Crie uma!</a></small>
+    <small>Está sem uma conta? <a href="{{ url_for('auth.register_page') }}">Crie uma!</a></small>
     {% endblock %}

@@ -2,27 +2,28 @@
 
 {% block title %}Página de Login{% endblock %}
 
-
-{% block quote %}
-<p id="left-quote">"É, talvez você tenha que se preocupar..."</p>
-<small id="left-quote" style="font-style: italic;">— Thor (O cachorro)</small>
-{% endblock %}
+{% block quote %}"É, talvez você tenha que se preocupar..."{% endblock %}
+{% block author %}— Thor (O cachorro){% endblock %}
 
 {% block content %}
 
 <h2>Está tudo bem,</h2>
 <p>Você se lembra da sua dica mestre?</p>
 </div>
-<div class="input-group mb-3">
+<div class="input-group mb-2">
     <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Usuário" autocomplete="off">
 </div>
-<div class="input-group mb-1">
+<div class="input-group mb-2">
     <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Dica  Mestre" autocomplete="off">
 </div>
-<div class="input-group mb-3 d-flex justify-content-between"></div>
 <div class="input-group mb-3">
+    <div class="row">
+        <small>Acho que <a href="#">esqueci minha dica</a> também...</small>
+    </div>
+    <div class="input-group mb-3 d-flex justify-content-between"></div>
     <button class="btn btn-lg btn-primary w-100 fs-6">Autenticar</button>
 </div>
 <div class="row">
-    <small>Voltar ao <a href="#">menu principal</a></small>
-    {% endblock %}
+    <small><a href="{{ url_for('auth.auth_page') }}">Menu Principal</a></small>
+</div>
+{% endblock %}

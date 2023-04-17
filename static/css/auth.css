@@ -20,6 +20,16 @@ h2.box, p.box, small.box{
     color: var(--bs-menu);
 }
 
+a{
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    font-weight: 500;
+}
+
 #left-quote{
     text-shadow: 1px 2px 5px #000000c4;
 }
@@ -33,9 +43,14 @@ h2.box, p.box, small.box{
 .right-box{
     padding: 40px 30px 40px 40px;
 }
+
+.wrapper {
+    height: 100vh;
+  }
+
 #image-left {
     width: 22rem; 
-    height: 30rem;
+    height: 32rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

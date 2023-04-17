@@ -15,20 +15,31 @@
     <!-- Container Principal -->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <!-- Container de Login -->
-        <div class="row rounded-5 p-3 shadow box-area">
-            <!-- Caixa da Esquerda -->
-            <div class="col-md-5 rounded-4 d-flex justify-content-center align-items-center flex-column left-box"
-                id="image-left" style="background-image: url('/static/images/login/{{ inspiration_image }}.jpg');">
-                {% block quote %}
-                {% endblock %}
-            </div>
-            <!-- Caixa da Direita -->
-            <div class="col-md-7 right-box">
+        <div class="row rounded-5 p-0 shadow box-area">
+            <!-- Caixa de Alinhamento -->
+            <div class="wrapper d-flex align-items-center justify-content-center">
+                <!-- Caixa da Esquerda -->
+                <div class="col-md-3 rounded-4 d-flex flex-column justify-content-center align-items-center position-relative"
+                    id="image-left" style="background-image: url('/static/images/login/{{ inspiration_image }}.jpg');">
+                    
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <p id="left-quote">{% block quote %}{% endblock %}<p>
+                        <small id="left-quote" style="font-style: italic;">{% block author %}{% endblock %}</small>
+                    </div>
 
-                <div class="row align-items-center">
-                    <div class="header-text mb-4">
-                        {% block content %}
-                        {% endblock %}
+                    <div class="mb-4 position-absolute bottom-0">
+                        <img src="/static/images/Logotipo.png" alt="Logotipo do Tavella's">
+                    </div>
+
+                </div>
+                <!-- Caixa da Direita -->
+                <div class="col-md-7 right-box">
+
+                    <div class="row align-items-center">
+                        <div class="header-text mb-4">
+                            {% block content %}
+                            {% endblock %}
+                        </div>
                     </div>
                 </div>
             </div>
