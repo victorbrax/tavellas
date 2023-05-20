@@ -13,3 +13,20 @@ def register_services():
 @register.route('/magrelas')
 def register_bikes():
     return render_template('coverage/register_bike.html')
+
+@register.route('/bikeclass')
+def register_bike_class():
+    return render_template('coverage/register_bike_class.html')
+
+@register.route('/produtos')
+def register_products():
+    return render_template('coverage/register_product.html')
+
+@register.route('/usuarios')
+def register_users():
+    return render_template('coverage/register_user.html')
+
+@register.route('/cargos')
+def register_cargos():
+    return render_template('coverage/register_cargo.html')
+

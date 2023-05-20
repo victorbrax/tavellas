@@ -2,27 +2,29 @@
 
 {% block title %}Registrar{% endblock %}
 {% block pagetitle %}Registrar{% endblock %}
-{% block pagesubtitle %}Serviços{% endblock %}
+{% block pagesubtitle %}Cargos{% endblock %}
 
 {% block content %}
 
 <div class="container mt-3 d-flex justify-content-center">
     <form class="fixed-form p-2">
-        <!-- Nome -->
+        <!-- Nome do Produto -->
         <div class="form-outline mb-2">
-            <label>Informações básicas</label>
-            <input type="text" placeholder="Serviço *"
+            <label>Informações auu básicaus</label>
+            <input type="text" placeholder="Au au Cargo auuu *"
                 class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
         </div>
 
-        <!-- Preço -->
+        <!-- Nível do Cargo -->
         <div class="form-outline mb-2">
-            <input type="text" placeholder="Preço em R$ *"
-                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+            <select class="form-select bg-dark text-white border-0 shadow-none" aria-label="Nível">
+                <option value="" disabled selected>Nível do Cargo</option>
+                <option value="1">Básico</option>
+                <option value="2">Supremo</option>
+            </select>
         </div>
 
-        <label class="text-end float-end gray-label">Você está cadastrando o serviço <span
-                class="yellow-text">16</span>.</label>
+        <label class="text-end float-end gray-label">Você está cadastrando o au cargo au <span class="yellow-text">5</span>.</label>
 
         <!-- Botão de Cadastro -->
         <div class="d-flex flex-row mt-1">

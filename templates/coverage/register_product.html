@@ -2,17 +2,27 @@
 
 {% block title %}Registrar{% endblock %}
 {% block pagetitle %}Registrar{% endblock %}
-{% block pagesubtitle %}Serviços{% endblock %}
+{% block pagesubtitle %}Produtos{% endblock %}
 
 {% block content %}
 
 <div class="container mt-3 d-flex justify-content-center">
     <form class="fixed-form p-2">
-        <!-- Nome -->
+        <!-- Nome do Produto -->
         <div class="form-outline mb-2">
             <label>Informações básicas</label>
-            <input type="text" placeholder="Serviço *"
+            <input type="text" placeholder="Nome do Produto *"
                 class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Tipo de Produto -->
+        <div class="form-outline mb-2">
+            <select class="form-select bg-dark text-white border-0 shadow-none" aria-label="Tipo do Produto">
+                <option value="" disabled selected>Tipo</option>
+                <option value="1">Peças</option>
+                <option value="2">Acessórios</option>
+            </select>
+            <label class="float-end gray-label">Lembre-se de <a href="#">criar um tipo de produto</a> antes.</label>
         </div>
 
         <!-- Preço -->
@@ -21,8 +31,7 @@
                 class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
         </div>
 
-        <label class="text-end float-end gray-label">Você está cadastrando o serviço <span
-                class="yellow-text">16</span>.</label>
+        <label class="text-end float-end gray-label">Você está cadastrando o produto <span class="yellow-text">98</span>.</label>
 
         <!-- Botão de Cadastro -->
         <div class="d-flex flex-row mt-1">

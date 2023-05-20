@@ -1,8 +1,11 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %}Registrar Clientes{% endblock %}
+{% block title %}Registrar{% endblock %}
+{% block pagetitle %}Registrar{% endblock %}
+{% block pagesubtitle %}Clientes{% endblock %}
 
 {% block content %}
+
 <div class="container mt-3 d-flex justify-content-center">
     <form class="fixed-form p-2">
         <!-- Nome -->
@@ -70,24 +73,29 @@
             </div>
         </div>
 
-        <!-- Contato -->
+        <!-- Celular -->
         <div class="form-outline mb-2">
             <label>Contato</label>
             <input type="text" placeholder="Celular *"
                 class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
         </div>
 
-        <!-- Contato -->
+        <!-- Telefone -->
         <div class="form-outline mb-2">
             <input type="text" placeholder="Telefone"
                 class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
         </div>
 
-        <!-- Botão de Cadastro -->
         <label class="text-end float-end gray-label">Você está cadastrando o cliente <span
                 class="yellow-text">102</span>.</label>
-        <button type="submit" class="btn btn-success btn-block mr-1 mb-4">Cadastrar</button>
-        <button type="reset" class="btn btn-danger btn-block mb-4">Cancelar</button>
+
+        <!-- Botão de Cadastro -->
+        <div class="d-flex flex-row mt-1">
+            <div>
+                <button type="submit" class="btn btn-success btn-block mr-1">Cadastrar</button>
+                <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+            </div>
+        </div>
 
     </form>
 </div>

@@ -1,0 +1,72 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Registrar{% endblock %}
+{% block pagetitle %}Registrar{% endblock %}
+{% block pagesubtitle %}Usuários{% endblock %}
+
+{% block content %}
+
+<div class="container mt-3 d-flex justify-content-center">
+    <form class="fixed-form p-2">
+        <!-- Nome -->
+        <div class="form-outline mb-2">
+            <label>Informações básicas</label>
+            <input type="text" placeholder="Nome *"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Nick de Usuário -->
+        <div class="form-outline mb-2">
+            <input type="text" placeholder="Nick de Usuário *"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Cargo -->
+        <div class="form-outline mb-2">
+            <select class="form-select bg-dark text-white border-0 shadow-none" aria-label="Cargo">
+                <option value="" disabled selected>Cargo</option>
+                <option value="1">Dono</option>
+                <option value="2">Mecânico</option>
+            </select>
+            <label class="float-end gray-label">Lembre-se de <a href="#">criar um cargo</a> com o Thor antes.</label>
+        </div>
+
+        <!-- Senha e Confirmação -->
+        <div class="form-outline mb-2">
+            <label>Segurança</label>
+            <input type="password" placeholder="Senha *"
+            class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+        
+        <div class="form-outline mb-2">
+            <input type="password" placeholder="Confirme a Senha *"
+            class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Dica mestre -->
+        <div class="form-outline mb-2">
+            <input type="text" placeholder="Dica mestre da Senha"
+            class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+        
+        <!-- Telefone -->
+        <label>Contato</label>
+        <div class="form-outline mb-2">
+            <input type="text" placeholder="Celular ou Telefone *"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <label class="text-end float-end gray-label">Você está cadastrando o usuário <span class="yellow-text">17</span>.</label>
+
+        <!-- Botão de Cadastro -->
+        <div class="d-flex flex-row mt-1">
+            <div>
+                <button type="submit" class="btn btn-success btn-block mr-1">Cadastrar</button>
+                <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}
