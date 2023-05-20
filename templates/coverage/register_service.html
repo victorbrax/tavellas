@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Registrar Serviço{% endblock %}
+
+{% block content %}
+<div class="container mt-2 d-flex justify-content-center border border-primary">
+    <form class="fixed-form border border-success p-2">
+            <h3 class="mb-0">Registrar</h3>
+            <p>Novo Serviço</p>
+            <!-- Nome do Serviço -->
+            <div class="form-outline mb-2">
+                <label>Informações básicas</label>
+                <input type="text" placeholder="Nome do Serviço*"
+                    class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+            </div>
+
+            <!-- Preço em R$ -->
+            <div class="form-outline mb-2">
+                <input type="text" placeholder="Preço em R$ *"
+                    class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+            </div>
+
+            <!-- Botão de Cadastro -->
+            <label class="text-end float-end gray-label">Você está cadastrando o serviço <span class="yellow-text">12</span>.</label>
+            <button type="submit" class="btn btn-success btn-block mr-1 mb-4">Cadastrar</button>
+            <button type="reset" class="btn btn-danger btn-block mb-4">Cancelar</button>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}

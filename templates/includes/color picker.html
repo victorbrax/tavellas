@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calor pika</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .color-picker-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #color-box {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+      background-color: #000000;
+      border-radius: 5px;
+    }
+
+    .color-label {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="color-picker-container">
+    <input type="color" id="color-picker" onchange="changeColor(event)">
+    <label class="color-label" for="color-picker">Escolha uma cor</label>
+    <div id="color-box"></div>
+  </div>
+
+  <script>
+    function changeColor(event) {
+      var color = event.target.value;
+      var colorBox = document.getElementById("color-box");
+      colorBox.style.backgroundColor = color;
+      colorBox.style.boxShadow = `0px 0px 10px ${color}`;
+    }
+  </script>
+</body>
+</html>

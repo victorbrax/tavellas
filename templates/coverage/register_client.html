@@ -1,0 +1,95 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Registrar Clientes{% endblock %}
+
+{% block content %}
+<div class="container mt-3 d-flex justify-content-center">
+    <form class="fixed-form p-2">
+        <!-- Nome -->
+        <div class="form-outline mb-2">
+            <label>Informações básicas</label>
+            <input type="text" placeholder="Nome *"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Bicicleta do Cliente -->
+        <div class="form-outline mb-2">
+            <input type="text" placeholder="Bicicleta do Cliente *"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+            <label class="float-end gray-label">Lembre-se de <a href="#">criar uma bicicleta</a> antes.</label>
+        </div>
+
+        <!-- Estado -->
+        <div class="form-outline mb-2">
+            <label>Endereço</label>
+            <select class="form-select bg-dark text-white border-0 shadow-none" aria-label="Estado">
+                <option value="" disabled selected>Estado</option>
+                <option value="1">São Paulo</option>
+                <option value="2">Minas Gerais</option>
+            </select>
+        </div>
+
+
+        <!-- Cidade e CEP -->
+        <div class="row">
+            <div class="col sm-pd-right">
+                <div class="form-outline mb-2">
+                    <input type="text" placeholder="Cidade"
+                        class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+                </div>
+
+            </div>
+            <div class="col sm-pd-left">
+                <div class="form-outline mb-2">
+                    <input type="text" placeholder="CEP"
+                        class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Bairro -->
+        <div class="form-outline mb-2">
+            <input type="text" placeholder="Bairro"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Rua e Nº -->
+        <div class="row">
+            <div class="col-8 sm-pd-right">
+                <div class="form-outline mb-2">
+                    <input type="text" placeholder="Rua"
+                        class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+                </div>
+
+            </div>
+            <div class="col-4 sm-pd-left">
+                <div class="form-outline mb-2">
+                    <input type="text" placeholder="Nº"
+                        class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Contato -->
+        <div class="form-outline mb-2">
+            <label>Contato</label>
+            <input type="text" placeholder="Celular *"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Contato -->
+        <div class="form-outline mb-2">
+            <input type="text" placeholder="Telefone"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <!-- Botão de Cadastro -->
+        <label class="text-end float-end gray-label">Você está cadastrando o cliente <span
+                class="yellow-text">102</span>.</label>
+        <button type="submit" class="btn btn-success btn-block mr-1 mb-4">Cadastrar</button>
+        <button type="reset" class="btn btn-danger btn-block mb-4">Cancelar</button>
+
+    </form>
+</div>
+
+{% endblock %}

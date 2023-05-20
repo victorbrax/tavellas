@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link de Estilos da Base -->
+    {% include 'includes/base_styles.html' %}
+
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
+    <!-- Include do Pre Loader -->
     {% include 'includes/loader_wheel.html' %}
 
-    {% block content %}
-    
-    {% endblock %}
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i><img src="{{ url_for('static', filename='icons/BikeLogo.svg') }}" alt="Ícone"></i>
+            <span class="logo_name">Tave<span>ll</span>a<span>'</span>s</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i><img src="{{ url_for('static', filename='icons/Painel.svg') }}" alt="Ícone"></i>
+                    <span class="link_name">Painel Inicial</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Painel Inicial</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="{{ url_for('static', filename='icons/User.svg') }}" alt="Ícone"></i>
+                        <span class="link_name">Usuários</span>
+                    </a>
+                    <i class='bi bi-caret-down-fill arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Usuários</a></li>
+                    <li><a href="#">Editar</a></li>
+                    <li><a href="#">Cadastrar</a></li>
+                    <li><a href="#">Remover</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="{{ url_for('static', filename='icons/Cadastrar.svg') }}" alt="Ícone"></i>
+                        <span class="link_name">Cadastrar</span>
+                    </a>
+                    <i class='bi bi-caret-down-fill arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Cadastrar</a></li>
+                    <li><a href="#">Magrelas</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Produtos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i><img src="{{ url_for('static', filename='icons/Demandas.svg') }}" alt="Ícone"></i>
+                    <span class="link_name">Demandas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Demandas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i><img src="{{ url_for('static', filename='icons/Estoque.svg') }}" alt="Ícone"></i>
+                    <span class="link_name">Estoque</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Estoque</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                  <div class="profile-content">
+                    <img src="{{ url_for('static', filename='images/tmp/robson.png') }}" alt="temporario">
+
+                  </div>
+                  <div class="name-job">
+                    <div class="profile_name">Robson</div>
+                    <div class="job">Dono</div>
+                  </div>
+                  <i class="bi bi-box-arrow-right"></i>
+                </div>
+              </li>
+        </ul>
+    </div>
+    <section class="content-section">
+        <div class="base-content">
+            <i class="bi bi-list"></i>
+            <span class="text">Painel</span>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </section>
+
+    <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
 </body>
 </html>
