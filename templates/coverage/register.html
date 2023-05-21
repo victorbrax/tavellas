@@ -1,0 +1,168 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Registrar{% endblock %}
+{% block pagetitle %}Menu de Registro{% endblock %}
+{% block pagesubtitle %}Itens disponíveis{% endblock %}
+
+{% block content %}
+<!-- Container dos Botões -->
+<div class="container mt-5">
+<!-- Linha dos Botões -->
+    <div class="row g-3">
+
+         <!-- Novo Cliente -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-dark"
+                style="border-radius: 1.0rem; background-color: #F8FD99; box-shadow: 4px 4px 10px black">
+                <h5>Novo Cliente</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Cliente.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Nova Magrela -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-dark"
+                style="border-radius: 1.0rem; background-color: #C89AFE; box-shadow: 4px 4px 10px black">
+                <h5>Nova Magrela</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Magrela.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Novo Produto -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-dark"
+                style="border-radius: 1.0rem; background-color: #FFD155; box-shadow: 4px 4px 10px black">
+                <h5>Novo Produto</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Produto.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Novo Usuário -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-dark"
+                style="border-radius: 1.0rem; background-color: #00C39A; box-shadow: 4px 4px 10px black">
+                <h5>Novo Usuário</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Usuario.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Novo Serviço -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-white"
+                style="border-radius: 1.0rem; background-color: #A1A646; box-shadow: 4px 4px 10px black">
+                <h5>Novo Serviço</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Servico.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Nova Classe -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-white"
+                style="border-radius: 1.0rem; background-color: #56337E; box-shadow: 4px 4px 10px black">
+                <h5>Nova Classe</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Classe.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Novo Tipo -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-white"
+                style="border-radius: 1.0rem; background-color: #B4891F; box-shadow: 4px 4px 10px black">
+                <h5>Novo Tipo</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Tipo.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Novo Cargo -->
+        <a href="#" class="col-3" style="text-decoration: none;;">
+            <div class="p-3 d-flex flex-column justify-content-center text-center text-dark"
+                style="border-radius: 1.0rem; background-color: #878888; box-shadow: 4px 4px 10px black">
+                <h5>Novo Cargo</h5>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h1 class="pt-2" style="font-weight: bold">77</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <i class="pt-3">
+                            <img src="{{ url_for('static', filename='icons/register_page/Cargo.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 2.5rem; opacity: 0.7;">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

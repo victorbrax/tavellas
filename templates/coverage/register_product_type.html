@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Registrar{% endblock %}
+{% block pagetitle %}Registrar{% endblock %}
+{% block pagesubtitle %}Tipo de Produto{% endblock %}
+
+{% block content %}
+
+<div class="container mt-3 d-flex justify-content-center">
+    <form class="fixed-form p-2">
+        <!-- Tipo de Produto -->
+        <div class="form-outline mb-2">
+            <label>Informações básicas</label>
+            <input type="text" placeholder="Tipo de Produto *"
+                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        </div>
+
+        <label class="text-end float-end gray-label">Você está cadastrando o tipo <span
+                class="yellow-text">9</span>.</label>
+
+        <!-- Botão de Cadastro -->
+        <div class="d-flex flex-row mt-1">
+            <div>
+                <button type="submit" class="btn btn-success btn-block mr-1">Cadastrar</button>
+                <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}

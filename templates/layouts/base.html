@@ -24,17 +24,48 @@
         <ul class="nav-links">
             <li>
                 <a href="#">
-                    <i><img src="{{ url_for('static', filename='icons/sidebar/Painel.svg') }}" alt="Ícone de Sidebar"></i>
+                    <i><img src="{{ url_for('static', filename='icons/sidebar/Painel.svg') }}"
+                            alt="Ícone de Sidebar"></i>
                     <span class="link_name">Painel Inicial</span>
                 </a>
                 <ul class="sub-menu blank">
                     <li><a class="link_name" href="#">Painel Inicial</a></li>
                 </ul>
             </li>
+
+            <li>
+                <a href="#">
+                    <i><img src="{{ url_for('static', filename='icons/sidebar/Demandas.svg') }}"
+                            alt="Ícone de Sidebar"></i>
+                    <span class="link_name">Demandas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Demandas</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="{{ url_for('register.register_page')}}">
+                        <i><img src="{{ url_for('static', filename='icons/sidebar/Cadastrar.svg')}}"
+                                alt="Ícone de Sidebar"></i>
+                        <span class="link_name">Adicionar</span>
+                    </a>
+                    <i class='bi bi-caret-down-fill arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="{{ url_for('register.register_page')}}">Adicionar</a></li>
+                    <li><a href="{{ url_for('register.register_bikes')}}">Magrelas</a></li>
+                    <li><a href="{{ url_for('register.register_services')}}">Serviços</a></li>
+                    <li><a href="{{ url_for('register.register_clients')}}">Clientes</a></li>
+                </ul>
+            </li>
+
             <li>
                 <div class="iocn-link">
                     <a href="#">
-                        <i><img src="{{ url_for('static', filename='icons/sidebar/User.svg') }}" alt="Ícone de Sidebar"></i>
+                        <i><img src="{{ url_for('static', filename='icons/sidebar/User.svg') }}"
+                                alt="Ícone de Sidebar"></i>
                         <span class="link_name">Usuários</span>
                     </a>
                     <i class='bi bi-caret-down-fill arrow'></i>
@@ -45,48 +76,28 @@
                     <li><a href="{{ url_for('register.register_cargos')}}">Cargos</a></li>
                 </ul>
             </li>
+
+
             <li>
                 <div class="iocn-link">
                     <a href="#">
-                        <i><img src="{{ url_for('static', filename='icons/sidebar/Cadastrar.svg')}}" alt="Ícone de Sidebar"></i>
-                        <span class="link_name">Cadastrar</span>
+                        <i><img src="{{ url_for('static', filename='icons/sidebar/Estoque.svg')}}"
+                                alt="Ícone de Sidebar"></i>
+                        <span class="link_name">Estoque</span>
                     </a>
                     <i class='bi bi-caret-down-fill arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Cadastrar</a></li>
-                    <li><a href="{{ url_for('register.register_bikes')}}">Magrelas</a></li>
-                    <li><a href="{{ url_for('register.register_services')}}">Serviços</a></li>
-                    <li><a href="{{ url_for('register.register_clients')}}">Clientes</a></li>
-                    <li><a href="{{ url_for('register.register_products')}}">Produtos</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i><img src="{{ url_for('static', filename='icons/sidebar/Demandas.svg') }}" alt="Ícone de Sidebar"></i>
-                    <span class="link_name">Demandas</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Demandas</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i><img src="{{ url_for('static', filename='icons/sidebar/Estoque.svg') }}" alt="Ícone de Sidebar"></i>
-                    <span class="link_name">Estoque</span>
-                </a>
-                <ul class="sub-menu blank">
                     <li><a class="link_name" href="#">Estoque</a></li>
+                    <li><a href="{{ url_for('register.register_product')}}">Cadastrar</a></li>
+                    <li><a href="{{ url_for('register.register_product_type')}}">Tipos</a></li>
                 </ul>
             </li>
-            <li>
 
-
-
-                
             <li>
                 <a href="#">
-                    <i><img src="{{ url_for('static', filename='icons/sidebar/Suporte.svg') }}" alt="Ícone de Sidebar"></i>
+                    <i><img src="{{ url_for('static', filename='icons/sidebar/Suporte.svg') }}"
+                            alt="Ícone de Sidebar"></i>
                     <span class="link_name">Suporte</span>
                 </a>
                 <ul class="sub-menu blank">
