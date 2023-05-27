@@ -1,13 +1,142 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %}Página de Administração{% endblock %}
+{% block title %}Home{% endblock %}
+{% block pagetitle %}Painel Inicial{% endblock %}
+{% block pagesubtitle %}O que vamos consertar hoje?{% endblock %}
 
 {% block content %}
+<!-- Container -->
+<div class="container d-flex flex-column mt-5">
+    <div class="row">
 
-<h1>Sample Page One - Inicial de Admin</h1>
-<a href="{{ url_for('user.user_page') }}">page de user</a>
-<br>
-<hr>
-<img src="/static/images/mailchamp.jpg" alt="" width="70%">
+        <div class="col-12 header-box mb-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="header header-title">Mês de Outubro</p>
+                    <h3 class="header header-text">Evite que mais placas como essa apareçam...</h3>
+                    <h5 class="header header-text">Veja quais são as suas demandas do dia!</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex info-father">
+
+
+                    <div class="d-flex info-child">
+                        <i>
+                            <img src="{{ url_for('static', filename='icons/home_page/header/bikes_consertadas.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 3.2rem;">
+                        </i>
+
+                        <div>
+                            <p class="header-text">Bikes consertadas</p>
+                            <h3 class="header-text">21</h3>
+                        </div>
+                    </div>
+
+                    <div class="d-flex info-child">
+                        <i>
+                            <img src="{{ url_for('static', filename='icons/home_page/header/bikes_aguardando.svg') }}"
+                                alt="Ícone de Dashboard" style="height: 3.2rem;">
+                        </i>
+
+                        <div>
+                            <p class="header-text">Bikes aguardando</p>
+                            <h3 class="header-text">21</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Buttons -->
+    <div class="row dashcolumn">
+
+        <div class="col-3 m-0 p-0">
+
+            <!-- Nova Magrela -->
+            <div class="col" style="background-color: #C89AFE;">
+                <div class="row">
+                <h5>Nova Magrela</h5>
+            </div>
+            <div class="d-flex">
+                <img src="{{ url_for('static', filename='icons/register_page/Magrela.svg') }}"
+                style="height: 2.5rem; opacity: 0.7;">
+                <h5>129</h5>
+            </div>
+        </div>
+        
+        <!-- Nova Pneu -->
+        <div class="col" style="background-color: #1a8396;">
+            <div class="row">
+                <h5>Nova Magrela</h5>
+            </div>
+            <div class="d-flex">
+                <img src="{{ url_for('static', filename='icons/register_page/Magrela.svg') }}"
+                    style="height: 2.5rem; opacity: 0.7;">
+                <h5>129</h5>
+            </div>
+        </div>
+        
+    </div>
+    
+        <!-- Nova Foguete -->
+        <div class="col-3" style="background-color: #38852e;">
+            <div class="row">
+                <h5>Nova Magrela</h5>
+            </div>
+            <div class="d-flex">
+                <img src="{{ url_for('static', filename='icons/register_page/Magrela.svg') }}"
+                    style="height: 2.5rem; opacity: 0.7;">
+                <h5>129</h5>
+            </div>
+        </div>
+        
+        <div class="col-3 m-0 p-0">
+
+            <!-- Nova Magrela -->
+            <div class="col" style="background-color: #C89AFE;">
+                <div class="row">
+                <h5>Nova Magrela</h5>
+            </div>
+            <div class="d-flex">
+                <img src="{{ url_for('static', filename='icons/register_page/Magrela.svg') }}"
+                style="height: 2.5rem; opacity: 0.7;">
+                <h5>129</h5>
+            </div>
+        </div>
+        
+        <!-- Nova Pneu -->
+        <div class="col" style="background-color: #1a8396;">
+            <div class="row">
+                <h5>Nova Magrela</h5>
+            </div>
+            <div class="d-flex">
+                <img src="{{ url_for('static', filename='icons/register_page/Magrela.svg') }}"
+                    style="height: 2.5rem; opacity: 0.7;">
+                <h5>129</h5>
+            </div>
+        </div>
+        
+    </div>
+    
+        <!-- Nova Foguete -->
+        <div class="col-3" style="background-color: #38852e;">
+            <div class="row">
+                <h5>Nova Magrela</h5>
+            </div>
+            <div class="d-flex">
+                <img src="{{ url_for('static', filename='icons/register_page/Magrela.svg') }}"
+                    style="height: 2.5rem; opacity: 0.7;">
+                <h5>129</h5>
+            </div>
+        </div>
+        
+
+
+
+    </div>
+</div>
+
 
 {% endblock %}

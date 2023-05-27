@@ -34,9 +34,9 @@ db.init_app(app)
 
 
 # Registrando as rotas
+app.register_blueprint(admin, url_prefix="/")
 app.register_blueprint(auth, url_prefix="/")
 app.register_blueprint(user, url_prefix="/user")
-app.register_blueprint(admin, url_prefix="/admin")
 app.register_blueprint(register, url_prefix="/register")
 
 

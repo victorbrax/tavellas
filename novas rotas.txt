@@ -1,0 +1,16 @@
+index.html > {/} ou /home
+
+login > {auth} / auth/login | /auth/cadastrar | /auth/esqueceu_senha
+
+demandas > /demandas
+
+adicionar > {registrar} | registrar/servicos | registrar/usuarios [...]
+
+visualizar > {visualizar} | /visualizar/usuarios | /visualizar/servicos  [...]
+
+suporte > {/} /suporte
+
+
+
+
+

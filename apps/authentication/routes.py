@@ -16,3 +16,4 @@ def register_page():
 def forgot_page():
     return render_template('accounts/forgot_pass.html', 
                            inspiration_image='wallpaper3')
+
