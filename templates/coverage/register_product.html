@@ -26,9 +26,11 @@
         </div>
 
         <!-- Preço -->
-        <div class="form-outline mb-2">
-            <input type="text" placeholder="Preço em R$ *" id="price"
-                class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
+        <div class="form-outline input-group">
+            <span class="p-2 bg-dark me-2 rounded text-wrap">R$</span>
+            <input type="text" placeholder="Preço *" id="priceInteger"
+                class="form-control bg-dark text-white border-0 rounded shadow-none bold-placeholder" />
+            <span contenteditable="true" id="priceDecimal" class="p-2 bg-dark rounded border-0 shadow-none ms-2">.00</span>
         </div>
 
         <label class="text-end float-end gray-label">Você está cadastrando o produto <span class="yellow-text">98</span>.</label>

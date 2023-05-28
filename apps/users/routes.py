@@ -5,3 +5,7 @@ user = Blueprint('user', __name__, static_folder="static", template_folder="temp
 @user.route('/')
 def user_page():
     return render_template('user/user.html')
+
+@user.route('/suporte')
+def user_suport():
+    return render_template('user/suporte.html')
