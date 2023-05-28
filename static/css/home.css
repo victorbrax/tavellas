@@ -4,18 +4,34 @@
     box-sizing: border-box;
 }
 
+body {
+    zoom: 80%;
+  }
+
 /* Header */
 .header-box {
     background-image: url("/static/icons/home_page/header/bike_background.svg");
     background-repeat: no-repeat;
-    background-position: 105% 10%;
-    background-size: 25%;
+    background-position: 105% 5%;
+    background-size: 30%;
     background-color: #00C39A;
-    height: 14rem;
+    height: 16rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+}
+
+/* Header Titles */
+.header-titles {
+    padding-bottom: 1rem;
+}
+
+.header-titles h4,
+.header-titles p {
+    margin: 0;
+    padding: 0;
 }
 
 .header-title {
@@ -27,17 +43,18 @@
 }
 
 .header-text {
-    margin-bottom: 0%;
+    text-align: center;
+    margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-    color: rgb(29, 29, 29)
+    color: #1d1d1d;
 }
 
 /* Header Indicators */
 .indicators {
     display: flex;
     gap: 2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.6rem;
 }
 
 .indicator {
@@ -47,96 +64,128 @@
 
 .indicator img {
     height: 3.5rem;
-    opacity: 0.8;
-}
-
-.indicator-info {
-    color: black;
-    padding-bottom: 0.4rem;
 }
 
 .indicator-info h3,
 .indicator-info p {
+    color: black;
     margin: 0;
 }
 
-/* Shortcut Titles */
-.shortcut-titles {
-    padding-bottom: 0.8rem;
+/* Buttons Titles */
+.buttons-titles {
+    padding-bottom: 1rem;
 }
 
-.shortcut-titles h3,
-.shortcut-titles span {
+.buttons-titles h4,
+.buttons-titles p {
     margin: 0;
+    padding: 0;
 }
 
-/* Shortcuts */
-.shortcuts {
+/* Buttons */
+.buttons-grid {
     display: grid;
-    gap: 0.7rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a x c y" 
-                         "b x d y";
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "a x c y"
+        "b x d y";
 }
 
-.shortcut {
-    text-align: center;
-    align-items: center;
-    color: rgb(19, 19, 19);
+.button {
+    color: black;
+    padding: 1rem;
     border-radius: 1rem;
-    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
 }
 
-.shortcut-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    padding-right: 3rem;
-}
+a  {
+    color: #000000;
+    text-decoration: none;
+}    
 
-.shortcut-info h5,
-.shortcut-info h2 {
-    margin: 0;
-}
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}    
 
-
-.shortcut img {
-    height: 4.4rem;
+.button img {
+    margin: auto;
     opacity: 0.8;
+    filter: brightness(0.7);
+    height: 4rem;
 }
 
-.sh-small {
-    display: flex;
-}
-
-.sh-list {
+.button-info {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    gap: 0.6rem;
+    justify-content: flex-end;
+    margin: 0 auto;
 }
 
-.sh-line {
-    background: crimson;
+.button-list {
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
-.sh-1 {
-    background: #FFF155;
+.bt-item {
+    padding: 0.6rem 0;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.185);
 }
-.sh-2 {
-    background: #FFF155;
+
+.button-list li img {
+    max-height: 2rem;
+    min-height: 1.6rem;
+    padding-right: 0.2rem;
 }
-.sh-3 {
-    background: #FFF155;
+
+.bt-more {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    background: rgba(0, 0, 0, 0.185);
+    margin: auto;
+    width: 50%;
+}
+
+.anchor1 {
+    display: flex;
+    grid-area: a;
+    background: #9b4aad;
+}
+
+.anchor2 {
+    display: flex;
+    grid-area: b;
+    background: #d64949;
+}
+
+.anchor3 {
+    text-align: center;
     grid-area: x;
+    background: #418cf5;
 }
-.sh-4 {
-    background: #FFF155;
+
+.anchor4 {
+    display: flex;
+    grid-area: c;
+    background: #61c277;
 }
-.sh-5 {
-    background: #FFF155;
+
+.anchor5 {
+    display: flex;
+    grid-area: d;
+    background: #f19442;
 }
-.sh-6 {
-    background: #FFF155;
+
+.anchor6 {
+    text-align: center;
     grid-area: y;
+    background: #f0647e;
 }

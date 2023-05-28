@@ -6,7 +6,7 @@ for (var i = 0; i < arrow.length; i++) {
   });
 }
 let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".bi-list");
+let sidebarBtn = document.querySelector(".logo-details");
 console.log(sidebarBtn);
 sidebarBtn.addEventListener("click", ()=>{
   sidebar.classList.toggle("close");

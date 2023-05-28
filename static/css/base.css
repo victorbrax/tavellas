@@ -20,6 +20,7 @@
 body {
     color: white;
     background-color: var(--bs-panel);
+    zoom: 100%;
 }
 
 label.gray-label {
