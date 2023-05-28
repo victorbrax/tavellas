@@ -9,3 +9,10 @@ def user_page():
 @user.route('/suporte')
 def user_suport():
     return render_template('user/suporte.html')
+
+@user.route('/demandas')
+def user_demands():
+    return render_template('user/demandas.html', aguardando  = {}, 
+                                                 emReparo    = {}, 
+                                                 finalizadas = {}, 
+                                                 entregues   = {})

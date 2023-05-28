@@ -64,6 +64,8 @@ function transformString(numbers) {
  * @returns { string } price
  */
 function formatPrice(price) {
+
+    /* Refatorar */
     switch(price.length) {
         case 1:
         case 2:

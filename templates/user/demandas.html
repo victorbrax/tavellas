@@ -1,0 +1,89 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Demandas{% endblock %}
+{% block pagetitle %}Demandas{% endblock %}
+
+
+{% block content %}
+<div class="d-flex justify-content-end w-75 mx-auto">
+    <div>
+        <div class="input-group">
+            <select name="" id="" class="form-select me-1 rounded bg-dark border-0">
+                <option value=""></option>
+                <option value="">salve</option>
+            </select>
+            <input type="text" placeholder="Filtro Demandas"
+                class="form-control border-0 shadow-none bg-dark text-white" />
+            <span class="ms-1 p-2 rounded bg-dark btn cursor-pointer" style="font-size:20px;">
+                <i class="bi bi-search text-white"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center mx-auto rounded h-75 mt-2 w-75" style="background-color: rgba(34, 29, 29, 0.932);">
+    <div class="d-flex gap-2 justify-content-between w-100 p-3">
+        <div class="d-flex flex-column text-center w-25">
+            <p>Aguardando</p>
+            <div class="rounded bg-dark p-3 w-100 h-100 mx-auto">
+                {% if aguardando is not none %}
+                    {% for key, valor in aguardando.items() %}
+                        <div class="rounded bg-secondary w-75 mx-auto"> 
+                            <p id="BIKE-{{key}}" data-valor="{{ valor }}" onclick="listaBike(this.id)">
+                                <i class="bi bi-bicycle" style="font-size:20px"></i>
+                                BIKE-{{ key }} 
+                            </p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="d-flex flex-column text-center w-25">
+            <p>Em Reparo</p>
+            <div class="rounded bg-dark p-3 w-100 h-100 mx-auto">
+                {% if emReparo is not none %}
+                    {% for key, valor in emReparo.items() %}
+                        <div class="rounded bg-secondary w-75 mx-auto"> 
+                            <p id="BIKE-{{key}}" data-valor="{{ valor }}" onclick="listaBike(this.id)">
+                                <i class="bi bi-bicycle" style="font-size:20px"></i>
+                                BIKE-{{ key }} 
+                            </p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="d-flex flex-column text-center w-25">
+            <p>Finalizadas</p>
+            <div class="rounded bg-dark p-3 w-100 h-100 mx-auto">
+                {% if finalizadas is not none %}
+                    {% for key, valor in finalizadas.items() %}
+                        <div class="rounded bg-secondary w-75 mx-auto"> 
+                            <p id="BIKE-{{key}}" data-valor="{{ valor }}" onclick="listaBike(this.id)">
+                                <i class="bi bi-bicycle" style="font-size:20px"></i>
+                                BIKE-{{ key }} 
+                            </p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="d-flex flex-column text-center w-25">
+            <p>Entregues</p>
+            <div class="rounded bg-dark p-3 w-100 h-100 mx-auto">
+                {% if entregues is not none %}
+                    {% for key, valor in entregues.items() %}
+                        <div class="rounded bg-secondary w-75 mx-auto"> 
+                            <p id="BIKE-{{key}}" data-valor="{{ valor }}" onclick="listaBike(this.id)">
+                                <i class="bi bi-bicycle" style="font-size:20px"></i>
+                                BIKE-{{ key }} 
+                            </p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
