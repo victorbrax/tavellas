@@ -1,6 +1,16 @@
 /* Google Fonts Poppins Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,400;1,500;1,600&display=swap');
 
+a {
+    color: #00C39A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00C39A;
+    text-decoration: underline;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,16 +43,6 @@ label {
     font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
-}
-
-a {
-    color: #00C39A;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #00C39A;
-    text-decoration: underline;
 }
 
 .yellow-text {

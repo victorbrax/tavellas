@@ -100,13 +100,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
 }
 
-a  {
-    color: #000000;
+.button a {
+    color: #d9ff01;
     text-decoration: none;
 }    
 
-a:hover {
-    color: #000000;
+.button a:hover {
+    color: #ff0000;
     text-decoration: none;
 }    
 
