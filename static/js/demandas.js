@@ -35,7 +35,7 @@ function ajustaBike(valores) {
     this.ajusteDados(formRight, info)
 }
 
-function fecha(id) {
+function fecha() {
     formBike.className += ' visually-hidden'
 }
 
