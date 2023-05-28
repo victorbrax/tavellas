@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header-box {
+    background-image: url("/static/icons/home_page/header/bike_background.svg");
+    background-repeat: no-repeat;
+    background-position: 105% 5%;
+    background-size: 30%;
+    background-color: #00C39A;
+    height: 14rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #c53535;
+    margin-top: 0.1rem;
+}
+
+.header-text {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #1d1d1d;
+}
+
+/* Header Indicators */
+.indicators {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.indicator {
+    display: flex;
+    gap: 1rem;
+}
+
+.indicator img {
+    height: 3.5rem;
+    opacity: 0.8;
+}
+
+.indicator-info h3,
+.indicator-info p {
+    margin: 0;
+}
+
+/* Buttons Titles */
+.buttons-titles {
+    padding-bottom: 1rem;
+}
+
+.buttons-titles h4,
+.buttons-titles p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+.buttons-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "a x c y"
+        "b x d y";
+}
+
+.button {
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+a.button  {
+    color: #000000;
+    text-decoration: none;
+}    
+
+a:hover.button {
+    color: #000000;
+    text-decoration: none;
+}    
+
+.button img {
+    margin: auto;
+    opacity: 0.8;
+    filter: brightness(0.7);
+    height: 4rem;
+}
+
+.button-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.button-list {
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.bt-item {
+    padding: 0.6rem 0;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.185);
+}
+
+.button-list li img {
+    max-height: 2rem;
+    min-height: 1.6rem;
+    padding-right: 0.2rem;
+}
+
+.bt-more {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    background: rgba(0, 0, 0, 0.185);
+    margin: auto;
+    width: 50%;
+}
+
+.anchor1 {
+    display: flex;
+    grid-area: a;
+    background: #9b4aad;
+}
+
+.anchor2 {
+    display: flex;
+    grid-area: b;
+    background: #d64949;
+}
+
+.anchor3 {
+    text-align: center;
+    grid-area: x;
+    background: #418cf5;
+}
+
+.anchor4 {
+    display: flex;
+    grid-area: c;
+    background: #61c277;
+}
+
+.anchor5 {
+    display: flex;
+    grid-area: d;
+    background: #f19442;
+}
+
+.anchor6 {
+    text-align: center;
+    grid-area: y;
+    background: #f0647e;
+}
