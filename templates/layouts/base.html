@@ -8,8 +8,7 @@
 
     <!-- Link de Estilos da Base -->
     {% include 'includes/base_styles.html' %}
-    <!-- Link de Estilos da Home -->
-    {% include 'includes/home_styles.html' %}
+    {% block styles %}{% endblock %}
 
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -124,7 +123,6 @@
     </div>
     
     <!-- Conteúdo das Páginas -->
-    <h3>{% block pagetitle %}{% endblock %}</h3>
     <section class="content-section">
         <div class="container-fluid pt-3">
             {% block content %}

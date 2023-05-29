@@ -1,3 +1,16 @@
+/* Títulos da Página */
+.page-titles {
+    margin: 0;
+    padding-bottom: 0.3rem;
+}
+
+.page-titles h4,
+.page-titles p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4rem;
+}
+
 /* Header */
 .header-box {
     background-image: url("/static/icons/home_page/header/bike_background.svg");
@@ -13,23 +26,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
 }
 
-/* Header Titles */
-.header-titles {
-    padding-bottom: 1rem;
-}
-
-.page-titles {
-    margin: 0;
-    padding-bottom: 0.3rem;
-}
-
-.page-titles h4,
-.page-titles p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.3rem;
-}
-
+/* Informações do Header */
 .header-title {
     text-align: center;
     font-size: 1.0rem;
@@ -46,7 +43,7 @@
     color: #1d1d1d;
 }
 
-/* Header Indicators */
+/* Indicadores do Header */
 .indicators {
     display: flex;
     gap: 2rem;
@@ -62,24 +59,13 @@
     height: 3.5rem;
 }
 
-.indicator-info h3,
-.indicator-info p {
+.indicator h3,
+.indicator p {
     color: black;
     margin: 0;
 }
 
-/* Buttons Titles */
-.buttons-titles {
-    padding-bottom: 1rem;
-}
-
-.buttons-titles h4,
-.buttons-titles p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Buttons */
+/* Grid dos Botões */
 .buttons-grid {
     display: grid;
     gap: 1rem;
@@ -89,22 +75,24 @@
         "b x d y";
 }
 
+/* Links dos Botões */
+.buttons-grid a {
+    color: black;
+    text-decoration: none;
+}
+
+.buttons-grid a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Botões */
 .button {
     color: black;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
 }
-
-.button a {
-    color: #d9ff01;
-    text-decoration: none;
-}    
-
-.button a:hover {
-    color: #ff0000;
-    text-decoration: none;
-}    
 
 .button img {
     margin: auto;
@@ -122,33 +110,31 @@
 
 .button-list {
     font-weight: 500;
+    font-size: 1rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
     align-items: center;
 }
 
-.bt-item {
+.button-list-item {
     padding: 0.3rem 0;
     margin-bottom: 0.6rem;
-    font-size: 1rem;
     border-radius: 0.5rem;
     background: rgba(0, 0, 0, 0.185);
 }
 
-.button-list li img {
-    height: 1rem;
-    padding-right: 0.2rem;
-}
-
-.bt-more {
-    border-radius: 0.5rem;
-    padding: 0.5rem 0;
-    background: rgba(0, 0, 0, 0.185);
+.button-list-more {
     margin: auto;
     width: 50%;
 }
 
+.button-list img {
+    height: 1rem;
+    padding-right: 0.2rem;
+}
+
+/* Disposição de Layout dos Botões */
 .anchor1 {
     display: flex;
     grid-area: a;
