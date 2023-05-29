@@ -15,7 +15,7 @@ body {
     background-position: 105% 5%;
     background-size: 30%;
     background-color: #00C39A;
-    height: 16rem;
+    height: 14rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -28,10 +28,16 @@ body {
     padding-bottom: 1rem;
 }
 
-.header-titles h4,
-.header-titles p {
+.page-titles {
+    margin: 0;
+    padding-bottom: 0.3rem;
+}
+
+.page-titles h4,
+.page-titles p {
     margin: 0;
     padding: 0;
+    line-height: 1.3rem;
 }
 
 .header-title {
@@ -133,16 +139,15 @@ body {
 }
 
 .bt-item {
-    padding: 0.6rem 0;
+    padding: 0.3rem 0;
     margin-bottom: 0.6rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 0.5rem;
     background: rgba(0, 0, 0, 0.185);
 }
 
 .button-list li img {
-    max-height: 2rem;
-    min-height: 1.6rem;
+    height: 1rem;
     padding-right: 0.2rem;
 }
 

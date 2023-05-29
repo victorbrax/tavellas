@@ -122,18 +122,14 @@
             </li>
         </ul>
     </div>
+    
     <!-- Conteúdo das Páginas -->
+    <h3>{% block pagetitle %}{% endblock %}</h3>
     <section class="content-section">
-
-        <div class="base-content">
-            <div class="px-2 pt-4">
-                <h3>{% block pagetitle %}{% endblock %}</h3>
-                <span>{% block pagesubtitle %}{% endblock %}</span>
-            </div>
+        <div class="container-fluid pt-3">
+            {% block content %}
+            {% endblock %}
         </div>
-        {% block content %}
-        {% endblock %}
-
     </section>
 
     <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
