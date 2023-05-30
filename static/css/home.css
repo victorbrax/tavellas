@@ -1,3 +1,5 @@
+/* Trocar os ícones para preto depois */
+
 /* Títulos da Página */
 .page-titles {
     margin: 0;
@@ -17,13 +19,14 @@
     background-repeat: no-repeat;
     background-position: 105% 5%;
     background-size: 30%;
-    background-color: #00C39A;
+    background-color: #009C7B;
     height: 14rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+    color: white;
 }
 
 /* Informações do Header */
@@ -40,7 +43,6 @@
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-    color: #1d1d1d;
 }
 
 /* Indicadores do Header */
@@ -56,12 +58,12 @@
 }
 
 .indicator img {
+    background-image: white;
     height: 3.5rem;
 }
 
 .indicator h3,
 .indicator p {
-    color: black;
     margin: 0;
 }
 
@@ -77,18 +79,17 @@
 
 /* Links dos Botões */
 .buttons-grid a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .buttons-grid a:hover {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 /* Botões */
 .button {
-    color: black;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
@@ -96,8 +97,6 @@
 
 .button img {
     margin: auto;
-    opacity: 0.8;
-    filter: brightness(0.7);
     height: 4rem;
 }
 
@@ -138,35 +137,35 @@
 .anchor1 {
     display: flex;
     grid-area: a;
-    background: #9b4aad;
+    background: #7C3B8A;
 }
 
 .anchor2 {
     display: flex;
     grid-area: b;
-    background: #d64949;
+    background: #aa2c2c;
 }
 
 .anchor3 {
     text-align: center;
     grid-area: x;
-    background: #418cf5;
+    background: #0949A2;
 }
 
 .anchor4 {
     display: flex;
     grid-area: c;
-    background: #61c277;
+    background: #338455;
 }
 
 .anchor5 {
     display: flex;
     grid-area: d;
-    background: #f19442;
+    background: rgb(187, 131, 35);
 }
 
 .anchor6 {
     text-align: center;
     grid-area: y;
-    background: #f0647e;
+    background: #8C0E25;
 }

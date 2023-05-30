@@ -66,7 +66,7 @@
     <div class="row buttons-grid">
 
         <!-- Botão 1 -->
-        <a href="" class="button anchor1">
+        <a href="{{ url_for('register.register_bikes')}}" class="button anchor1">
             <img src="{{ url_for('static', filename='icons/home_page/buttons/bike.svg') }}">
             <div class="button-info">
                 <h5>Nova Bike</h5>
@@ -75,7 +75,7 @@
         </a>
 
         <!-- Botão 2 -->
-        <a href="" class="button anchor2">
+        <a href="{{ url_for('register.register_clients')}}" class="button anchor2">
             <img src="{{ url_for('static', filename='icons/home_page/buttons/client.svg') }}">
             <div class="button-info">
                 <h5>Novo Cliente</h5>
@@ -120,7 +120,7 @@
         </div>
 
         <!-- Botão 4 -->
-        <a href="" class="button anchor4" href="">
+        <a href="{{ url_for('register.register_product')}}" class="button anchor4" href="">
             <img src="{{ url_for('static', filename='icons/home_page/buttons/product.svg') }}">
             <div class="button-info">
                 <h5>Novo Produto</h5>
@@ -129,7 +129,7 @@
         </a>
 
         <!-- Botão 5 -->
-        <a href="" class="button anchor5">
+        <a href="{{ url_for('register.register_users')}}" class="button anchor5">
             <img src="{{ url_for('static', filename='icons/home_page/buttons/user.svg') }}">
             <div class="button-info">
                 <h5>Novo Usuário</h5>
@@ -139,22 +139,22 @@
 
         <!-- Botão 6 -->
         <div href="" class="button anchor6">
-            <h4>Produtos</h4>
+            <h4>Demandas</h4>
             <div class="button-info">
                 <ol class="button-list">
                     <a href="">
                         <li class="button-list-item">
-                            Acessórios
+                            Prioridade 1
                         </li>
                     </a>
                     <a href="">
                         <li class="button-list-item">
-                            Roupas
+                            Prioridade 2
                         </li>
                     </a>
                     <a href="">
                         <li class="button-list-item">
-                            Peças
+                            Prioridade 3
                         </li>
                     </a>
                     <a href="">
