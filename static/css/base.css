@@ -1,6 +1,7 @@
 /* Google Fonts Poppins Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,400;1,500;1,600&display=swap');
 
+/* Zerar Layout */
 * {
     margin: 0;
     padding: 0;
@@ -8,32 +9,13 @@
     font-family: 'Inter', sans-serif;
 }
 
-.fixed-form {
-    width: 35rem; /* Altere o valor conforme necessário */
-  }
-
-:root {
-    --bs-panel: #121418;
-    --bs-menu: #1B1F24;
-}
-
+/* Corpo da Base */
 body {
     color: white;
-    background-color: var(--bs-panel);
+    background-color: #121418;;
 }
 
-label.gray-label {
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: rgba(179, 179, 179, 0.841);
-}
-
-label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-}
-
+/* Links */
 a {
     color: #00C39A;
     text-decoration: none;
@@ -43,24 +25,3 @@ a:hover {
     color: #00C39A;
     text-decoration: underline;
 }
-
-.yellow-text {
-    color: #FFC32E;
-}
-
-.sm-pd-left {
-    padding-left: 0.25rem;
-}
-
-.sm-pd-right {
-    padding-right: 0.25rem;
-}
-
-.bold-placeholder::placeholder {
-    font-weight: bold;
-}
-
-.form-select {
-    color: #FFC32E;
-  }
-  

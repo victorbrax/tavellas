@@ -18,7 +18,7 @@ def register_services():
 def register_bikes():
     return render_template('coverage/register_bike.html')
 
-@register.route('/classebike')
+@register.route('/classe')
 def register_bike_class():
     return render_template('coverage/register_bike_class.html')
 
