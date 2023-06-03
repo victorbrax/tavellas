@@ -1,0 +1,39 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Suporte{% endblock %}
+{% block pagetitle %}Suporte ao Usuário{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center flex-column mt-5">
+    <div class="text-center">
+        <h3>Entre em contato conosco</h3>
+        <h5>Descreva sua dúvida detalhadamente para o auxilio</h5>
+    </div>
+    <div class="d-flex justify-content-center">
+        <form action=""> 
+            <div class="d-flex justify-content-between">
+                <div class="form-outline mb-2">
+                    <input type="text" placeholder="Usuário"
+                        class="form-control p-2 bg-dark rounded text-white text-center border-0 shadow-none" />
+                </div>
+                <div>
+                    <input type="text" placeholder="Telefone"
+                        class="form-control p-2 bg-dark rounded text-white text-center border-0 shadow-none" />
+                </div>
+            </div>  
+    
+            <div class="form-outline d-flex justify-content-center">
+                <textarea name="" placeholder="Descreva seu problema" id="" cols="50" rows="10"
+                    class="form-control bg-dark text-white border-0 shadow-none text-center rounded"></textarea>
+            </div>
+
+            <div class="text-center">
+                <button class="mt-2 btn btn-success">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
