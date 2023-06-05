@@ -1,0 +1,47 @@
+.badge {
+    /* Variáveis */
+    --mdb-badge-padding-x: 0.65em;
+    --mdb-badge-padding-y: 0.35em;
+    --mdb-badge-font-size: 0.75em;
+    --mdb-badge-font-weight: 700;
+    --mdb-badge-color: #fff;
+    --mdb-badge-border-radius: 0.27rem;
+
+    display: inline-block;
+    padding: var(--mdb-badge-padding-y) var(--mdb-badge-padding-x);
+    font-size: var(--mdb-badge-font-size);
+    font-weight: var(--mdb-badge-font-weight);
+    line-height: 1;
+    color: var(--mdb-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--mdb-badge-border-radius);
+}
+
+.badge-success{
+    background-color: #d6f0e0;
+    color: #0d6832;
+}
+
+.badge-primary {
+    background-color: #dfe7f6;
+    color: #2c58a0;
+}
+
+.badge-warning {
+    background-color: #fbf0da;
+    color: #73510d;
+}
+
+.badge-error {
+    background-color: #f06464;
+    color: #790b0b;
+}
+
+.info-id {
+    display: inline-block;
+    background-color: #0e1118;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.37rem;
+}

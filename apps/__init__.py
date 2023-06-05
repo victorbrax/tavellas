@@ -6,6 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from apps.authentication import auth
 from apps.admin import admin
 from apps.users import user
+from apps.emails import emails
 from apps.coverage import register
 
 
@@ -36,6 +37,7 @@ db.init_app(app)
 # Registrando as rotas
 app.register_blueprint(admin, url_prefix="/")
 app.register_blueprint(auth, url_prefix="/")
+app.register_blueprint(emails, url_prefix="/")
 app.register_blueprint(register, url_prefix="/cadastrar")
 
 
