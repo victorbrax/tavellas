@@ -5,7 +5,6 @@ from flask_sqlalchemy import SQLAlchemy
 
 from apps.authentication import auth
 from apps.admin import admin
-from apps.users import user
 from apps.emails import emails
 from apps.coverage import register
 
