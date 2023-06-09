@@ -1,1 +1,0 @@
-from apps.admin.routes import admin

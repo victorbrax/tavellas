@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícone -->
+    <link rel="shortcut icon" href="/static/icons/tavellas-bike.svg" type="image/x-icon">
+
+    <!-- Link de Estilos da Base -->
+    {% include 'includes/base_styles.html' %}
+    {% block styles %}{% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <!-- Include do Pre Loader -->
+    {% include 'includes/loader_wheel.html' %}
+
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i><img src="{{ url_for('static', filename='icons/tavellas-bike.svg') }}" alt="Ícone de Sidebar"></i>
+            <span class="logo_name" style="user-select: none;">Tave<span>ll</span>a<span>'</span>s</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i><img src="{{ url_for('static', filename='icons/sidebar/painel.svg') }}"
+                            alt="Ícone de Sidebar"></i>
+                    <span class="link_name">Painel</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="">Painel</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i><img src="{{ url_for('static', filename='icons/sidebar/demandas.svg') }}"
+                            alt="Ícone de Sidebar"></i>
+                    <span class="link_name">Demandas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Demandas</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="{{ url_for('register.index') }}">
+                        <i><img src="{{ url_for('static', filename='icons/sidebar/cadastrar.svg')}}"
+                                alt="Ícone de Sidebar"></i>
+                        <span class="link_name">Adicionar</span>
+                    </a>
+                    <i class='bi bi-caret-down-fill arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="{{ url_for('register.index') }}">Adicionar</a></li>
+                    <li><a href="#">Magrelas</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Clientes</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i><img src="{{ url_for('static', filename='icons/sidebar/usuarios.svg') }}"
+                                alt="Ícone de Sidebar"></i>
+                        <span class="link_name">Usuários</span>
+                    </a>
+                    <i class='bi bi-caret-down-fill arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Usuários</a></li>
+                    <li><a href="#">Cadastrar</a></li>
+                    <li><a href="#">Cargos</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i><img src="{{ url_for('static', filename='icons/sidebar/estoque.svg')}}"
+                                alt="Ícone de Sidebar"></i>
+                        <span class="link_name">Estoque</span>
+                    </a>
+                    <i class='bi bi-caret-down-fill arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Estoque</a></li>
+                    <li><a href="#">Cadastrar</a></li>
+                    <li><a href="#">Tipos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i><img src="{{ url_for('static', filename='icons/sidebar/suporte.svg') }}"
+                            alt="Ícone de Sidebar"></i>
+                    <span class="link_name">Suporte</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Suporte</a></li>
+                </ul>
+            </li>
+            <li>
+
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="{{ url_for('static', filename='images/tmp/robson.png') }}" alt="temporario">
+
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Robson</div>
+                        <div class="job">Dono</div>
+                    </div>
+                    <i class="bi bi-box-arrow-right"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Conteúdo das Páginas -->
+    <section class="content-section">
+        <div class="container-fluid pt-3">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+</body>
+
+</html>

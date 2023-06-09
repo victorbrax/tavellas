@@ -1,6 +1,6 @@
-from apps import app, db
+from app import create_app
 
+app = create_app()
 
-# Iniciar a aplicação em modo Debug e na porta 7000
 if __name__ == "__main__":
-    app.run(debug=True, port=7000)
+    app.run(host="0.0.0.0", port=7000)

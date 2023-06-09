@@ -1,0 +1,40 @@
+{% extends 'layouts/auth_base.html' %}
+
+{% block title %}Página de Login{% endblock %}
+
+{% block quote %}"Usuários de Speed não são bem vindos."{% endblock %}
+{% block author %}— Usuário de Mountain{% endblock %}
+
+{% block content %}
+
+<h2>Vamos lá,</h2>
+<p>Já pagou o IPVA da sua bike esse ano?</p>
+</div>
+<div class="input-group mb-2">
+    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Nome Completo">
+</div>
+<div class="input-group mb-2">
+    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Usuário">
+</div>
+<div class="input-group mb-2">
+    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Senha">
+</div>
+<div class="input-group mb-2">
+    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirme sua Senha">
+</div>
+<div class="input-group mb-2">
+    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Dica Mestre">
+</div>
+<div class="input-group mb-2 d-flex justify-content-between">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="formCheck">
+        <label for="formCheck" class="form-check-label text-secondary"><small>Eu aceito os <a href="">Termos de Uso</a>
+                do Thor...</small></label>
+    </div>
+</div>
+<div class="input-group mb-3">
+    <button class="btn btn-lg btn-success w-100 fs-6">Criar</button>
+</div>
+<div class="row">
+    <small>Já tem uma conta? <a href="{{ url_for('auth.index') }}">Login!</a></small>
+    {% endblock %}
