@@ -1,14 +1,14 @@
 {% extends 'layouts/base.html' %}
 {% block title %}Registrar{% endblock %}
 
-{% block styles %}
-<link rel="stylesheet" href="/static/css/forms.css">
+{% block link %}
+<link rel="stylesheet" href="/static/css/register/forms.css">
 {% endblock %}
 
 {% block content %}
 <div class="page-title text-center">
     <h2>Cadastrar Classe de Bikes</h2>
-  </div>
+</div>
 <div class="container mt-3 d-flex justify-content-center">
     <form class="fixed-form p-2">
         <!-- Nome -->
@@ -16,17 +16,14 @@
             <label>Informações básicas</label>
             <input type="text" placeholder="Classe de Bike *"
                 class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
-        </div>
-
-        <label class="text-end float-end gray-label">Você está cadastrando a classe de bike <span
-                class="yellow-text">5</span>.</label>
-
-        <!-- Botão de Cadastro -->
-        <div class="d-flex flex-row mt-1">
-            <div>
-                <button type="submit" class="btn btn-success btn-block mr-1">Cadastrar</button>
-                <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+                <label class="text-end float-end gray-label ms-5 mb-1">Você está cadastrando a classe de bike <span
+                        class="yellow-text">5</span>.</label>
             </div>
+            
+            <!-- Botão de Cadastro -->
+            <div>
+                <button type="submit" class="btn btn-success btn-sm mr-1">Cadastrar</button>
+                <button type="reset" class="btn btn-danger btn-sm">Cancelar</button>
         </div>
 
     </form>

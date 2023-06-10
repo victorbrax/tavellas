@@ -1,8 +1,8 @@
 {% extends 'layouts/base.html' %}
 {% block title %}Registrar{% endblock %}
 
-{% block styles %}
-<link rel="stylesheet" href="/static/css/forms.css">
+{% block link %}
+<link rel="stylesheet" href="/static/css/register/forms.css">
 {% endblock %}
 
 {% block content %}
@@ -24,14 +24,14 @@
                 class="form-control bg-dark text-white border-0 shadow-none bold-placeholder" />
         </div>
 
-        <label class="text-end float-end gray-label">Você está cadastrando o serviço <span
-                class="yellow-text">16</span>.</label>
-
+        
         <!-- Botão de Cadastro -->
-        <div class="d-flex flex-row mt-1">
+        <div>
             <div>
                 <button type="submit" class="btn btn-success btn-block mr-1">Cadastrar</button>
                 <button type="reset" class="btn btn-danger btn-block">Cancelar</button>
+                <label class="text-end float-end gray-label ms-2">Você está cadastrando o serviço <span
+                        class="yellow-text">16</span>.</label>
             </div>
         </div>
 

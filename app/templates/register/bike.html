@@ -1,8 +1,8 @@
 {% extends 'layouts/base.html' %}
 {% block title %}Registrar{% endblock %}
 
-{% block styles %}
-<link rel="stylesheet" href="/static/css/forms.css">
+{% block link %}
+<link rel="stylesheet" href="/static/css/register/forms.css">
 {% endblock %}
 
 {% block content %}
@@ -32,7 +32,7 @@
         </div>
 
         <!-- Modelo -->
-        <div class="form-outline mb-2">
+        <div class="form-outline mb-1">
             <label>Aparência</label>
             <select class="form-select bg-dark text-white border-0 shadow-none" aria-label="Modelo">
                 <option value="" disabled selected>Modelo</option>

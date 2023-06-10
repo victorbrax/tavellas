@@ -1,10 +1,173 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %} The Home{% endblock %}
+{% block title %}Home{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/main/home.css') }}"/>
+{% endblock %}
 
 {% block content %}
-    <span class="title"><h1>blaze</h1></span>
-    <div class="content">
-        <h2>This is the main Flask Blueprint page</h2>
+<!-- Container -->
+<div class="container">
+
+    <!-- Título do Header -->
+    <div class="page-titles">
+        <h4>Painel Inicial</h4>
+        <p>Qual leão vamos matar hoje?</p>
     </div>
+
+    <div class="row">
+        <!-- Caixa do Header -->
+        <div class="col-12 header-box mb-3">
+
+            <!-- Informações Textuais -->
+            <div class="row">
+                <div class="col-12">
+                    <p class="header-title">Outubro</p>
+                    <h3 class="header-text">Evite que mais placas dessa apareçam...</h3>
+                    <h5 class="header-text">Veja quais são as <strong>suas demandas</strong> do dia!</h5>
+                </div>
+            </div>
+
+            <!-- Indicadores do Mês -->
+            <div class="row">
+                <div class="col-12 indicators">
+
+                    <!-- Bikes Consertadas -->
+                    <div class="indicator">
+                        <img src="{{ url_for('static', filename='icons/home_page/header/bikes_consertadas.svg') }}">
+                        <div>
+                            <p>Bikes consertadas:</p>
+                            <h3>21</h3>
+                        </div>
+                    </div>
+
+                    <!-- Bikes Aguardando -->
+                    <div class="indicator">
+                        <img src="{{ url_for('static', filename='icons/home_page/header/bikes_aguardando.svg') }}">
+                        <div>
+                            <p>Bikes aguardando:</p>
+                            <h3>21</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Título do Quintal de Botões -->
+    <div class="page-titles">
+        <h4>Atalhos</h4>
+        <p>Mais agilidade no dia a dia.</p>
+    </div>
+
+    <!-- Botões de Atalho -->
+    <div class="row buttons-grid">
+
+        <!-- Botão 1 -->
+        <a href="{{ url_for('register.register_bikes')}}" class="button anchor1">
+            <img src="{{ url_for('static', filename='icons/home_page/buttons/bike.svg') }}">
+            <div class="button-info">
+                <h5>Nova Bike</h5>
+                <h2>129</h2>
+            </div>
+        </a>
+
+        <!-- Botão 2 -->
+        <a href="{{ url_for('register.register_clients')}}" class="button anchor2">
+            <img src="{{ url_for('static', filename='icons/home_page/buttons/client.svg') }}">
+            <div class="button-info">
+                <h5>Novo Cliente</h5>
+                <h2>129</h2>
+            </div>
+        </a>
+
+        <!-- Botão 3 -->
+        <div class="button anchor3">
+            <h4>Relatórios</h4>
+            <div class="button-info">
+                <ol class="button-list">
+
+                    <a href="">
+                        <li class="button-list-item">
+                            <img src="{{ url_for('static', filename='icons/home_page/buttons/report.svg') }}">
+                            Fev/23
+                        </li>
+                    </a>
+
+                    <a href="">
+                        <li class="button-list-item">
+                            <img src="{{ url_for('static', filename='icons/home_page/buttons/report.svg') }}">
+                            Abr/23
+                        </li>
+                    </a>
+
+                    <a href="">
+                        <li class="button-list-item">
+                            <img src="{{ url_for('static', filename='icons/home_page/buttons/report.svg') }}">
+                            Mai/23
+                        </li>
+                    </a>
+
+                    <a href="">
+                        <li class="button-list-item button-list-more">
+                            <img src="{{ url_for('static', filename='icons/home_page/buttons/more.svg') }}"></span>
+                        </li>
+                    </a>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Botão 4 -->
+        <a href="{{ url_for('register.register_product')}}" class="button anchor4" href="">
+            <img src="{{ url_for('static', filename='icons/home_page/buttons/product.svg') }}">
+            <div class="button-info">
+                <h5>Novo Produto</h5>
+                <h2>129</h2>
+            </div>
+        </a>
+
+        <!-- Botão 5 -->
+        <a href="{{ url_for('register.register_users')}}" class="button anchor5">
+            <img src="{{ url_for('static', filename='icons/home_page/buttons/user.svg') }}">
+            <div class="button-info">
+                <h5>Novo Usuário</h5>
+                <h2>29</h2>
+            </div>
+        </a>
+
+        <!-- Botão 6 -->
+        <div href="" class="button anchor6">
+            <h4>Demandas</h4>
+            <div class="button-info">
+                <ol class="button-list">
+                    <a href="">
+                        <li class="button-list-item">
+                            Prioridade 1
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="button-list-item">
+                            Prioridade 2
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="button-list-item">
+                            Prioridade 3
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="button-list-item button-list-more">
+                            <img src="{{ url_for('static', filename='icons/home_page/buttons/more.svg') }}"></span>
+                        </li>
+                    </a>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 {% endblock %}

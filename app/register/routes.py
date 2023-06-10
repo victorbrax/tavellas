@@ -2,7 +2,7 @@ from flask import render_template
 from app.register import bp
 
 
-@bp.route('/menu')
+@bp.route('/')
 def index():
     return render_template('register/index.html')
 
@@ -20,7 +20,7 @@ def register_bikes():
 
 @bp.route('/classe')
 def register_bike_class():
-    return render_template('register/bike_class.html')
+    return render_template('register/class.html')
 
 @bp.route('/produtos')
 def register_product():

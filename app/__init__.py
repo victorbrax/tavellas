@@ -1,6 +1,6 @@
 from flask import Flask
 
-from config import DevConfig
+from config import DevConfig, QasConfig
 from app.extensions import db
 
 def create_app(config_class=DevConfig):
